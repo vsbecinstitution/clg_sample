@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: poppins;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.navbar {
+  height: 25vh;
+}
+.logosection {
+  width: 50vw;
+  height: 25vh;
+  border-radius: 0 0px 20px 0;
+  background-image: url("./images/logosecbg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.linksection {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.atag {
+  color: white;
+  border-radius: 10px;
+  border-style: solid;
+  margin-right: 20px;
+  padding: 10px;
+  width: 10vw;
+  text-align: center;
+  border-width: 2px;
+  text-decoration: none;
+}
+.atag:hover {
+  background-color: white;
+  color: #010680;
+}
+.admissiona {
+  background-color: rgb(7, 71, 248);
+  border-style: none;
+}
+
+.namebar {
+  display: flex;
+  width: 100vw;
+  height: 17vh;
+  background-color: #010680;
+}
+.logo {
+  height: 10vw;
+  margin-top: -5vh;
+}
+.clgname {
+  margin-top: -5vh;
+}
+.clgname > h1 {
+  color: red;
+}
+.sliderwrap {
+  display: flex;
+  height: 75vh;
+}
+.slider {
+  background-color: rgb(255, 180, 180);
+  margin-top: 5vh;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+}
+.leftslider {
+  width: 40vw;
+  margin: 5vw;
+}
+.slideimg {
+  height: 45vh;
+  border-radius: 10px;
+  width: 53vw;
+}
+.rightslider {
+  background-color: rgb(255, 255, 255);
+  width: 60vw;
+  margin: 5vh;
+  height: 50vh;
+  border-radius: 20px;
+  margin-right: -10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide {
+  transition: opacity 3s ease-in-out;
+  width: 100%;
+}
+
+.slide.active {
+  transition: opacity 3s ease-in-out;
+
+  z-index: 1;
+}
+
+.left_head {
+  color: rgb(132, 4, 36);
+}
+
+.h1_100 {
+  color: rgb(132, 4, 36);
+}
+.h1_100 > strong {
+  color: rgb(132, 4, 36);
+  font-size: 10vh;
+}
+.query {
+  background-color: rgb(132, 4, 36);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  width: 10vw;
+  text-align: center;
+}
+.h4_100 {
+  color: rgb(132, 4, 36);
+}
+.pfp {
+  width: 100vw;
+  background-color: #c9eaff;
+  height: 15vh;
+  font-size: 5vh;
+  text-align: center;
+  color: #2966e1;
+}
+.showdiv {
+  margin-top: 10vh;
+  height: 65vh;
+  display: flex;
+  margin-bottom: 10vh;
+}
+.showdiv1 {
+  margin-top: 10vh;
+  height: 65vh;
+  display: flex;
+  margin-bottom: 10vh;
+}
+.showright {
+  width: 55vw;
+  background-color: rgb(255, 255, 255);
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px 0 0 30px;
+  box-shadow: 0px 0px 10px rgba(82, 82, 82, 0.288);
+  transform: translateX(50vw);
+}
+.showleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+
+  width: 45vw;
+}
+.showleft > h1 {
+  margin-bottom: 5vh;
+  color: #010680;
+}
+.showimg {
+  width: 95%;
+  height: 60vh;
+  margin: 2%;
+  border-radius: 20px;
+}
+.showright1 {
+  width: 55vw;
+  background-color: rgb(255, 255, 255);
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px 30px 30px 30px;
+  box-shadow: 0px 0px 10px rgba(82, 82, 82, 0.288);
+  transform: translateX(-50vw);
+}
+.showleft1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3vw;
+
+  width: 45vw;
+}
+.showleft1 > h1 {
+  margin-bottom: 5vh;
+  color: #010680;
+}
+.ug {
+  display: flex;
+  margin-top: 5vh;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+.courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(170, 245, 255); */
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 60vw;
+}
+.courses > h1 {
+  color: #010680;
+  font-size: large;
+  margin: 5px 0;
+  padding: 10px;
+  font-weight: 300;
+}
+.courses > h1:hover {
+  background-color: #010680;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  scale: 1.3;
+  transition: 0.5s;
+}
+.courses > hr {
+  width: 50vw;
+  color: rgb(255, 255, 255);
+  border: 1px dashed #d1d1d1;
+}
+
+.animation {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 2s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+@media only screen and (max-width: 600px) {
+  .logosection {
+    width: 100vw;
+  }
+  .clgname {
+    font-size: 2.5vw;
+  }
+  .logo {
+    height: 10vh;
+  }
+  .namebar {
+    flex-direction: column;
+    height: 15vh;
+  }
+  .navbar {
+    height: 5vh;
+  }
+  .linksection {
+    width: 100vw;
+    display: none;
+  }
+  .sliderwrap {
+    margin-top: 10vh;
+    height: max-content;
+    margin-bottom: 5vh;
+  }
+  .slider {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .leftslider {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  .left_head{
+    text-align: center;
+  }
+  .slideimg{
+    width: 90vw;
+    height: 26vh;
+  }
+  .rightslider{
+    width: 100vw;
+    height: 30vh;
+    margin-left: 6vw;
+  }
+  .h1_100 {
+    color: rgb(132, 4, 36);
+  }
+  .h1_100 > strong {
+    color: rgb(132, 4, 36);
+    font-size: 5vh;
+  }
+  .query {
+    background-color: rgb(132, 4, 36);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+    width: 30vw;
+    text-align: center;
+  }
+  .h4_100 {
+    color: rgb(132, 4, 36);
+  }
+  .pfp{
+    height: fit-content;
+    font-size: 1.5vh;
+    padding: 2vh 0;
+  }
+  .showdiv{
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .showleft{
+    width: 100vw;
+    text-align: center;
+    padding: 5vw;
+  }
+  .showright{
+    width: 90vw;
+    height: 27vh;
+    margin-left: 10vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .showimg{
+    height: 90%;
+    border-radius: 10px;
+  }
+  .showdiv1{
+    flex-direction: column-reverse;
+    height: fit-content;
+    margin-top: 0vh;
+  }
+  .showleft1{
+    width: 100vw;
+    text-align: center;
+    padding: 5vw;
+  }
+  .showright1{
+    width: 90vw;
+    height: 27vh;
+    margin-right: 10vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .courses{
+    width: 80vw;
+    text-align: center;
+  }
+
+}
